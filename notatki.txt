@@ -1,0 +1,10 @@
+zaczynamy od npm init -y
+npm install --save-dev stylelint
+npm i -D stylelint-config-prettier
+npm i -D stylelint-config-standard
+npm i -D stylelint-order
+
+
+zakomentować settings.json - linijkę "source.fixAll.stylelint": true
+pokazać --fix w package.json
+...i odkomentować
