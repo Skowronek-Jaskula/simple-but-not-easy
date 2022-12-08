@@ -8,3 +8,9 @@ npm i -D stylelint-order
 zakomentować settings.json - linijkę "source.fixAll.stylelint": true
 pokazać --fix w package.json
 ...i odkomentować
+
+
+https://html.spec.whatwg.org/multipage/sections.html#the-aside-element -> można dwa <aside>s
+
+
+edge-case: grid `aspect-ratio` lub nie fr tylko bezwględne jednostki
