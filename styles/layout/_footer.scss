@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "../abstracts" as *;
+
+.footer {
+  align-items: center;
+  background-color: map.get($velvets, "5");
+  color: map.get($yellows, "1");
+  display: flex;
+  height: $footer-height;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}

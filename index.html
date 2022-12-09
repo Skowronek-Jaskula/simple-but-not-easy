@@ -1,131 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <title>Simple but not Easy: HELLO</title>
-  <link rel="stylesheet" href="dist/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  /><link
-    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
-    rel="stylesheet"
-  />
-</html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modern Web Dev: styling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/dist/styles.css" />
+  </head>
 
-<body class="body">
-  <header class="header">
-    <h1>José Goz</h1>
-    <h3>Title: XI Chrysalis Pain (from Here, Yesterday)</h3>
-  </header>
+  <body>
+    <input
+      type="checkbox"
+      id="sidebarController"
+      class="controller__toggle"
+      data-label="Activated"
+    />
+    <main class="main">
+      <header class="header">
+        <h1 class="header__unchecked">Capgemini Visual Identity :)</h1>
+        <div class="header__checked">
+          <h1>Nights in Piątkowo</h1>
+          <h2>José Goz</h2>
+        </div>
+      </header>
 
-  <main class="main">
-    <aside class="sidebar sidebar--left">
-      <div class="sidebar__item sidebar__item--top">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/1.jpg" alt="" />
+      <article class="content">
+        <div class="content__main">
+          <label for="sidebarController" class="controller__label">
+            Label to activate the input
+          </label>
           <p>
-            My father was a remarkably good and special person, who lived for my
-            mother and myself.
+            Lorem qui ea voluptate in fugiat nulla pariatur labore pariatur duis
+            eiusmod irure aliqua minim. Fugiat nostrud ipsum cupidatat elit
+            excepteur Lorem. Minim cupidatat in ipsum tempor. Ea cupidatat quis
+            excepteur fugiat. In do ut et Lorem est quis ullamco ipsum enim ex
+            nulla officia. Lorem est amet aute velit minim consequat.
+          </p>
+          <p>
+            Elit sit irure laboris aliqua quis incididunt aute labore ut
+            reprehenderit exercitation. Id nostrud non aliqua ea nisi voluptate
+            eiusmod id id nulla eiusmod. Nulla elit exercitation dolor officia
+            non cupidatat consectetur enim in cupidatat. Fugiat esse elit id
+            elit anim aliquip esse nulla ullamco exercitation officia. Sit non
+            pariatur do ipsum nostrud amet incididunt ea. Cillum ea consequat
+            cillum proident nulla anim irure exercitation.
+          </p>
+          <p>
+            Exercitation aute deserunt est non exercitation ad qui. Qui sint ex
+            minim consectetur pariatur. Nulla veniam aliqua deserunt qui veniam
+            duis culpa est occaecat aute et. Cillum duis eiusmod dolor dolore
+            anim nostrud in occaecat nisi nisi consectetur anim irure. Dolore
+            consectetur anim eu ullamco qui magna. Magna magna eiusmod est
+            occaecat sint commodo.
+          </p>
+          <p>
+            Exercitation exercitation nostrud dolor incididunt magna eu. Duis
+            amet amet id nulla sit reprehenderit officia ipsum exercitation
+            incididunt elit eiusmod. Sunt minim ut nostrud occaecat pariatur
+            enim ipsum excepteur. Fugiat ut dolore excepteur enim enim eu anim
+            dolor esse officia eiusmod. Ad ad anim aute est amet reprehenderit
+            voluptate velit adipisicing. Est deserunt excepteur laboris quis
+            irure Lorem amet. Sint magna velit irure ad.
+          </p>
+          <p>
+            Irure fugiat commodo aute voluptate mollit cupidatat tempor commodo
+            ipsum. Ut ad aute cupidatat sint ipsum mollit. Cillum cillum dolor
+            voluptate exercitation sint enim labore ea. Consectetur aliquip
+            proident qui elit laborum dolor dolore sit quis ut in magna.
+            Excepteur aliquip exercitation tempor quis consequat cillum anim
+            laborum consectetur duis minim in irure.
           </p>
         </div>
-      </div>
-
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/2.jpg" alt="" />
-          <p>So, when, all of a sudden, he got sick</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/3.jpg" alt="" />
-          <p>we both were at the verge of a nervous breakdown.</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/4.jpg" alt="" />
-          <p>Sick as he was, he stayed home, behind the door.</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/5.jpg" alt="" />
-          <p>Seated in one of the old chairs we had.</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/6.jpg" alt="" />
-          <p>Bless him!</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/7.jpg" alt="" />
-          <p>Not even a rocker he had to rest his tired body!</p>
-        </div>
-      </div>
-    </aside>
-    <div class="main__middle">
-      <img src="./assets/images/8.jpg" alt="" />
-    </div>
-    <aside class="sidebar sidebar--right">
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/9.jpg" alt="" />
-          <p>Like a dried flower that has lost all chances to live</p>
-        </div>
-      </div>
-
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/10.jpg" alt="" />
-          <p>
-            that becomes dust to the touch, as every root, petal and leaf
-            crumble.
-          </p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/11.jpg" alt="" />
-          <p>Sad and wither, as a silent whisper</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/12.jpg" alt="" />
-          <p>
-            same I felt, clinging to the memory of my father like the prey flees
-            its hunter.
-          </p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/13.jpg" alt="" />
-          <p>Like a violent stream pulverising after a waterfall.</p>
-        </div>
-      </div>
-      <div class="sidebar__item">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/14.jpg" alt="" />
-          <p>Like a thorn of a rose, too deep into the skin.</p>
-        </div>
-      </div>
-      <div class="sidebar__item sidebar__item--bottom">
-        <div class="sidebar__item-wrapper">
-          <img src="../assets/images/15.jpg" alt="" />
-          <div class="sidebar__item--bottom-dialogue">
-            <span>Night after night, for two months, I dreamed about him.</span>
-            <span>Unitl the dim light of the firefly was no more.</span>
+        <aside class="sidebar">
+          <div class="color-palette">
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
-      </div>
-    </aside>
-  </main>
-  <footer class="footer">
-    <h3>Details: Pencil over paper and digital colour, 800x430mm, 2022</h3>
-  </footer>
-</body>
+          <p class="sidebar__header">Capgemini warm colors palette</p>
+          <p class="sidebar__paragraph">
+            Aliquip fugiat sint nisi est mollit elit sint ex laboris est Lorem
+            ea adipisicing. Aliqua dolor quis ea labore. Veniam culpa nulla
+            Lorem eu sunt velit commodo nostrud incididunt minim.
+          </p>
+          <p class="sidebar__paragraph--center">
+            Officia commodo sit sunt duis. Occaecat incididunt ullamco excepteur
+            fugiat pariatur magna proident excepteur tempor quis non mollit
+            dolore aliquip. Eiusmod adipisicing ex laborum eiusmod duis amet
+            consequat nostrud culpa irure consectetur adipisicing adipisicing.
+            Tempor sunt id irure consequat cupidatat ex cupidatat elit elit
+            officia. Eu officia voluptate sit labore laboris enim voluptate
+            commodo aliqua id.
+          </p>
+          <p class="sidebar__paragraph">
+            Ex deserunt Lorem aliqua pariatur dolor. Anim exercitation consequat
+            nisi reprehenderit deserunt. Aute velit reprehenderit fugiat nulla
+            ullamco voluptate cillum. Elit nulla dolor exercitation cupidatat
+            esse consequat Lorem deserunt proident.
+          </p>
+        </aside>
+
+        <img
+          class="content__img"
+          src="/imgs/women-fashion.svg"
+          alt="women-fashion"
+        />
+      </article>
+      <footer class="footer">
+        <h2>Footer</h2>
+      </footer>
+    </main>
+  </body>
+</html>
