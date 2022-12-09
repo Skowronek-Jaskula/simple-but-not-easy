@@ -16,7 +16,7 @@ module.exports = {
     ],
     "rule-empty-line-before": [
       "always",
-      { except: ["inside-block", "first-nested"] },
+      { except: ["first-nested"] },
       {
         ignore: [
           "after-comment",
@@ -27,6 +27,7 @@ module.exports = {
         ],
       },
     ],
+
     "declaration-no-important": true,
     "order/properties-alphabetical-order": true,
     "selector-class-pattern":
@@ -40,7 +41,12 @@ module.exports = {
         ignore: ["attribute", "class"],
       },
     ],
-    "max-nesting-depth": 4,
+    "max-nesting-depth": [
+      4,
+      {
+        ignore: ["pseudo-classes"],
+      },
+    ],
     "property-no-vendor-prefix": [
       true,
       {
@@ -67,7 +73,7 @@ module.exports = {
     "declaration-block-no-redundant-longhand-properties": [
       true,
       {
-        ignoreShorthands: ["/grid/"],
+        ignoreShorthands: ["/grid/", "/flex/", "/outline/"],
       },
     ],
   },

@@ -2,6 +2,7 @@
 
 .color-palette {
   margin-top: 2rem;
+
   &__row {
     display: flex;
     justify-content: center;
@@ -11,8 +12,8 @@
     .color-palette__row {
       &:nth-child(#{$row_number}) {
         @each $span_number, $hue in $color {
-          
           // stylelint-disable-next-line max-nesting-depth
+
           span {
             &:nth-child(#{$span_number}) {
               background-color: $hue;
@@ -22,6 +23,7 @@
       }
     }
   }
+
   span {
     height: 2rem;
     width: 2rem;

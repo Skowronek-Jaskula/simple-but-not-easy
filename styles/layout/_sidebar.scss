@@ -3,14 +3,17 @@
 
 .sidebar {
   width: $sidebar-width;
+
   &__header {
     font-size: 1.15rem;
     font-weight: bold;
     text-align: center;
   }
+
   &__paragraph {
     font-size: 0.75rem;
     text-align: justify;
+
     &--center {
       @extend .sidebar__paragraph;
 

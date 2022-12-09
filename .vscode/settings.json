@@ -4,19 +4,22 @@
   "editor.formatOnSave": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.stylelint": true
-  },
+
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
@@ -29,5 +32,7 @@
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "es5",
   "prettier.useTabs": false,
-  "stylelint.configFile": "stylelint.config.js"
+  "stylelint.configFile": "stylelint.config.js",
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "stylelint.validate": ["css", "less", "postcss", "scss"]
 }
