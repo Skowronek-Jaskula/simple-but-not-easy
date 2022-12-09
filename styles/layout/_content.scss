@@ -1,28 +1,29 @@
 @use "sass:map";
 @use "../abstracts" as *;
 
+$_img-negative-margin: 2rem;
+
 .content {
   border: solid thin map.get($velvets, "1");
-  display: flex;
-  padding: 3rem 1rem calc(#{$footer-img} - 2rem);
+  height: calc(
+    100vh - #{$footer-height} - #{$header-height} - #{$footer-img} - #{$_img-negative-margin}
+  );
+  padding: 3rem 0 calc(#{$footer-img} - #{$_img-negative-margin}) 1rem;
   position: relative;
-
   &__main {
     box-sizing: border-box;
     padding-right: 1rem;
     width: calc(100% - #{$sidebar-width});
-
     p:nth-child(odd) {
       color: map.get($violets, "4");
     }
   }
-
   &__img {
-    bottom: -2rem;
+    bottom: -$_img-negative-margin;
     height: $footer-img;
     opacity: 1;
     position: absolute;
-    right: 15rem;
+    width: 100%;
     z-index: 2;
   }
 }

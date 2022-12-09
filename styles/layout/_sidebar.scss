@@ -2,21 +2,22 @@
 @use "../abstracts" as *;
 
 .sidebar {
+  bottom: 0;
+  overflow-y: scroll;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: $sidebar-width;
-
   &__header {
     font-size: 1.15rem;
     font-weight: bold;
     text-align: center;
   }
-
   &__paragraph {
     font-size: 0.75rem;
     text-align: justify;
-
-    &--center {
-      @extend .sidebar__paragraph;
-
+    &:nth-child(even) {
       background-color: map.get($yellows, "1");
       padding: 0.25rem 0.5rem;
     }

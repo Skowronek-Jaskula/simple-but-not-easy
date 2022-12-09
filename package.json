@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass \"styles/styles.scss\" \"dist/styles.css\" --watch",
-    "stylelint": "npx stylelint \"**/*.scss\"",
-    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix"
+    "stylelint": "npx stylelint \"**/*.scss\""
   },
   "repository": {
     "type": "git",
