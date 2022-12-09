@@ -7,7 +7,7 @@
 /// @access private
 /// @group private-members
 /// @type Number
-$_controller-width: 8rem;
+$_controller-width: 6rem;
 
 /// @access private
 /// @group private-members
@@ -23,6 +23,10 @@ $_controller-pos-checked: calc(#{$_controller-width} - #{$_controller-height});
 /// Base class for a controller component.
 
 .controller {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
   &__toggle {
     @include box-shadows($state: "normal", $color: $grey4);
 
@@ -32,17 +36,14 @@ $_controller-pos-checked: calc(#{$_controller-width} - #{$_controller-height});
     border-radius: math.div($_controller-height, 2);
     display: flex;
     height: $_controller-height;
-    left: calc(50% + #{$body-width} / 2 - #{$_controller-height} / 2);
     margin: 0;
-    position: fixed;
-    top: calc(#{$_controller-width} - (#{$_controller-height} / 2));
-    transform: rotateZ(45deg);
-    transform-origin: calc(#{$_controller-height} / 2);
-    transition: background-color ease-in 0.2s, transform ease-in 0.25s;
+    position: relative;
+    transition: background-color ease-in 0.2s;
     width: $_controller-width;
     z-index: 9;
 
     // AFTER - controller button
+
     &::after {
       @include box-shadows($state: "normal", $color: $grey4);
 
@@ -57,6 +58,7 @@ $_controller-pos-checked: calc(#{$_controller-width} - #{$_controller-height});
     }
 
     // BEFORE - label
+
     &::before {
       color: $white;
       content: attr(data-label);
@@ -66,66 +68,68 @@ $_controller-pos-checked: calc(#{$_controller-width} - #{$_controller-height});
       transition: opacity 0.2s;
       width: 100%;
     }
+
     &:hover {
       @include box-shadows($state: "hover");
     }
+
     &:focus {
       @include box-shadows($state: "focus");
+
       &::after {
         @include box-shadows($state: "normal", $color: $main);
       }
     }
+
     &:disabled {
       @include box-shadows($state: "normal", $color: $grey2);
 
       background-color: $grey1;
       cursor: inherit;
     }
+
     &:checked {
       background-color: $main;
       box-shadow: none;
       justify-content: initial;
-      transform: rotateZ(-45deg);
+
       &:hover {
         @include box-shadows($state: "hover");
       }
+
       &:focus {
         @include box-shadows($state: "focus");
       }
+
       &::before {
         opacity: 1;
       }
+
       &::after {
         @include box-shadows($state: "normal", $color: $main);
 
         left: 0;
       }
-      ~ .main {
-        --body-width: 70rem;
-        .content__img {
-          opacity: 0;
-          transition: 2s opacity;
-          transition-delay: 10s;
-        }
-        &::after {
-          opacity: 1;
-        }
-      }
     }
 
     // stylelint-disable no-descending-specificity
+
     &:not(:checked) {
       // stylelint-enable no-descending-specificity
+
       &::before {
         opacity: 0;
       }
+
       &::after {
         left: $_controller-pos-checked;
       }
+
       &:hover::after,
       &:focus::after {
         @include box-shadows($state: "normal", $color: $grey4);
       }
+
       &:disabled {
         &::before,
         &::after {
@@ -133,13 +137,16 @@ $_controller-pos-checked: calc(#{$_controller-width} - #{$_controller-height});
         }
       }
     }
+
     &:disabled:checked {
       @include box-shadows($state: "normal", $color: $grey2);
 
       background-color: $grey1;
+
       &::before {
         color: $grey3;
       }
+
       &::after,
       &:hover::after,
       &:focus::after {
@@ -147,12 +154,12 @@ $_controller-pos-checked: calc(#{$_controller-width} - #{$_controller-height});
       }
     }
   }
+
   &__label {
     color: map.get($velvets, "5");
     cursor: pointer;
     font-weight: bold;
-    position: absolute;
-    top: 1rem;
+
     z-index: 9;
   }
 }

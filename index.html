@@ -9,12 +9,6 @@
   </head>
 
   <body>
-    <input
-      type="checkbox"
-      id="sidebarController"
-      class="controller__toggle"
-      data-label="Babajaga patrzy"
-    />
     <main class="main">
       <header class="header">
         <h1>Capgemini Visual Identity :)</h1>
@@ -22,9 +16,17 @@
 
       <article class="content">
         <div class="content__main">
-          <label for="sidebarController" class="controller__label">
-            Label to activate the input
-          </label>
+          <div class="controller">
+            <label for="sidebarController" class="controller__label">
+              Label to activate the input
+            </label>
+            <input
+              type="checkbox"
+              id="sidebarController"
+              class="controller__toggle"
+              data-label="activated"
+            />
+          </div>
           <p>
             Lorem qui ea voluptate in fugiat nulla pariatur labore pariatur duis
             eiusmod irure aliqua minim. Fugiat nostrud ipsum cupidatat elit
