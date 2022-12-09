@@ -3,10 +3,12 @@
   "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,7 +25,6 @@
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.printWidth": 80,
   "prettier.proseWrap": "never",
-
   "prettier.semi": true,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "es5",

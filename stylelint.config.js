@@ -10,14 +10,30 @@ module.exports = {
   plugins: ["stylelint-order"],
   rules: {
     "selector-max-empty-lines": 1,
-    "at-rule-empty-line-before": ["always"],
-    "rule-empty-line-before": ["always"],
+    "at-rule-empty-line-before": [
+      "always",
+      { except: ["after-same-name", "first-nested"] },
+    ],
+    "rule-empty-line-before": [
+      "always",
+      { except: ["inside-block", "first-nested"] },
+      {
+        ignore: [
+          "after-comment",
+          "first-nested",
+          "inside-block",
+          "blockless-after-same-name-blockless",
+          "blockless-after-blockless",
+        ],
+      },
+    ],
     "declaration-no-important": true,
     "order/properties-alphabetical-order": true,
     "selector-class-pattern":
       "([a-z]+)*(?:__[a-z]+(?:-[a-z]+)*)?(?:--[a-z]+(?:-[a-z]+)*)?(?:\\[.+\\])?",
     "scss/percent-placeholder-pattern":
       "([a-z]+)*(?:__[a-z]+(?:-[a-z]+)*)?(?:--[a-z]+(?:-[a-z]+)*)?(?:\\[.+\\])?",
+    "scss/at-extend-no-missing-placeholder": null,
     "selector-no-qualifying-type": [
       true,
       {

@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../abstracts" as *;
+
+.header {
+  align-items: center;
+  background-color: map.get($velvets, "1");
+  border-radius: $border-radius $border-radius 0 0;
+  color: map.get($velvets, "5");
+  display: flex;
+  height: $header-height;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
