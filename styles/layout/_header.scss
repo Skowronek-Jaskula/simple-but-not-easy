@@ -3,9 +3,9 @@
 
 .header {
   align-items: center;
-  background-color: map.get($velvets, "1");
+  background-color: $velvet1;
   border-radius: $border-radius $border-radius 0 0;
-  color: map.get($velvets, "5");
+  color: $velvet5;
   display: flex;
   height: $header-height;
   justify-content: center;

@@ -17,9 +17,5 @@
   &__paragraph {
     font-size: 0.75rem;
     text-align: justify;
-    &:nth-child(even) {
-      background-color: map.get($yellows, "1");
-      padding: 0.25rem 0.5rem;
-    }
   }
 }

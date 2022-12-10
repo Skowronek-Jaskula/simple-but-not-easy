@@ -4,7 +4,7 @@
 $_img-negative-margin: 2rem;
 
 .content {
-  border: solid thin map.get($velvets, "1");
+  border: solid thin $velvet1;
   height: calc(
     100vh - #{$footer-height} - #{$header-height} - #{$footer-img} - #{$_img-negative-margin}
   );
@@ -15,7 +15,7 @@ $_img-negative-margin: 2rem;
     padding-right: 1rem;
     width: calc(100% - #{$sidebar-width});
     p:nth-child(odd) {
-      color: map.get($violets, "4");
+      color: $violet4;
     }
   }
   &__img {

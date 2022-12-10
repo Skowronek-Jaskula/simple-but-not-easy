@@ -3,8 +3,8 @@
 
 .footer {
   align-items: center;
-  background-color: map.get($velvets, "5");
-  color: map.get($yellows, "1");
+  background-color: $velvet5;
+  color: $yellow1;
   display: flex;
   height: $footer-height;
   justify-content: center;
