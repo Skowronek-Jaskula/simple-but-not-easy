@@ -1,0 +1,13 @@
+@import url("_color-palette.css");
+@import url("_controller.css");
+@import url("_content.css");
+
+html {
+  font-size: 16px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+  margin: 0 auto;
+}

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "stylelint": "npx stylelint \"**/*.css\"",
-    "stylelint:fix": "npx stylelint \"**/*.css\" --fix"
+    "sass": "sass \"styles/styles.scss\" \"dist/styles.css\" --watch",
+    "stylelint": "npx stylelint \"**/*.scss\" --config stylelint.config.js",
+    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix --config stylelint.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,11 @@
   },
   "homepage": "https://github.com/Skowronek-Jaskula/simple-but-not-easy#readme",
   "devDependencies": {
+    "sass": "^1.56.1",
     "stylelint": "^14.16.0",
     "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^5.0.0"
   }

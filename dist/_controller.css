@@ -1,0 +1,161 @@
+.controller__label {
+  color: #42142e;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  top: 1rem;
+  z-index: 9;
+}
+
+.controller__toggle {
+  align-items: center;
+  -webkit-appearance: none;
+  background-color: #dfdfdf;
+  border-radius: 0.75rem;
+  box-shadow: inset 0 0 0 0.0625rem #909090;
+  display: flex;
+  height: 1.5rem;
+  left: calc(50% + var(--body-width) / 2 - 1.5rem / 2);
+  margin: 0;
+  position: fixed;
+  top: calc(8rem - (1.5rem / 2));
+  transform: rotateZ(45deg);
+  transform-origin: calc(1.5rem / 2);
+  transition: all ease-in 0.2s;
+  width: 8rem;
+  z-index: 9;
+}
+
+.controller__toggle::after {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.0625rem #909090;
+  content: "";
+  height: 1.5rem;
+  position: absolute;
+  transition: left ease-in 0.2s;
+  transition-delay: 0.1s;
+  width: 1.5rem;
+}
+
+.controller__toggle::before {
+  color: #fff;
+  content: attr(data-label);
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  text-align: right;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.controller__toggle:hover {
+  box-shadow: inset 0 0 0 0.125rem #ffd068;
+}
+
+.controller__toggle:focus {
+  box-shadow: inset 0 0 0 0.125rem #811b6f, 0 0 0 0.125rem #e557ad;
+}
+
+.controller__toggle:focus::after {
+  box-shadow: inset 0 0 0 0.0625rem #811b6f;
+}
+
+.controller__toggle:disabled {
+  background-color: #f8f8f8;
+  box-shadow: inset 0 0 0 0.0625rem #dfdfdf;
+  cursor: inherit;
+}
+
+.controller__toggle:checked {
+  background-color: #811b6f;
+  box-shadow: none;
+  justify-content: initial;
+  transform: rotateZ(-45deg);
+}
+
+.controller__toggle:checked,
+.controller__toggle:checked ~ * {
+  --body-width: 70rem;
+}
+
+.controller__toggle:checked:hover {
+  box-shadow: inset 0 0 0 0.125rem #ffd068;
+}
+
+.controller__toggle:checked:focus {
+  box-shadow: inset 0 0 0 0.125rem #811b6f, 0 0 0 0.125rem #e557ad;
+}
+
+.controller__toggle:checked::before {
+  opacity: 1;
+}
+
+.controller__toggle:checked::after {
+  box-shadow: inset 0 0 0 0.0625rem #811b6f;
+  left: 0;
+}
+
+.controller__toggle:checked ~ .main .header__unchecked {
+  display: none;
+}
+
+.controller__toggle:checked ~ .main .header__checked {
+  display: block;
+}
+
+.controller__toggle:checked ~ .main .controller__label {
+  top: -2rem;
+}
+
+.controller__toggle:checked ~ .main .content__img {
+  opacity: 0;
+  transition: 2s opacity;
+  transition-delay: 10s;
+}
+
+.controller__toggle:checked ~ .main::after {
+  display: block;
+  opacity: 1;
+}
+
+.controller__toggle:not(:checked),
+.controller__toggle:not(:checked) ~ * {
+  --body-width: 50rem;
+}
+
+.controller__toggle:not(:checked) ~ .main .header__checked {
+  display: none;
+}
+
+.controller__toggle:not(:checked)::before {
+  opacity: 0;
+}
+
+.controller__toggle:not(:checked)::after {
+  left: calc(8rem - 1.5rem);
+}
+
+.controller__toggle:not(:checked):hover::after,
+.controller__toggle:not(:checked):focus::after {
+  box-shadow: inset 0 0 0 0.0625rem #909090;
+}
+
+.controller__toggle:not(:checked):disabled::before,
+.controller__toggle:not(:checked):disabled::after {
+  content: none;
+}
+
+.controller__toggle:disabled:checked {
+  background-color: #f8f8f8;
+  box-shadow: inset 0 0 0 0.0625rem #dfdfdf;
+}
+
+.controller__toggle:disabled:checked::before {
+  color: #b7b7b7;
+}
+
+.controller__toggle:disabled:checked::after,
+.controller__toggle:disabled:checked:hover::after,
+.controller__toggle:disabled:checked:focus::after {
+  box-shadow: inset 0 0 0 0.0625rem #dfdfdf;
+}

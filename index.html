@@ -1,15 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <title>Simple but not Easy: HELLO</title>
-  <link rel="stylesheet" href="css/style.css" />
-</html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modern Web Dev: styling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/dist/styles.css" />
+  </head>
 
-<body>
-  <header>
-    <img src="assets/images/jose.jpg" alt="" width="500" />
-    HEADER
-  </header>
-  <main>MAIN</main>
-  <aside>SIDEBAR</aside>
-  <footer>footer</footer>
-</body>
+  <body>
+    <input
+      type="checkbox"
+      id="sidebarController"
+      class="controller__toggle"
+      data-label="Activated"
+    />
+    <main class="main">
+      <header class="header">
+        <h1 class="header__unchecked">Capgemini Visual Identity :)</h1>
+        <div class="header__checked">
+          <h1>Nights in Piątkowo</h1>
+          <h2>José Goz</h2>
+        </div>
+      </header>
+
+      <article class="content">
+        <div class="content__main">
+          <label for="sidebarController" class="controller__label">
+            Label to activate the input
+          </label>
+        </div>
+        <aside class="sidebar">
+          <div class="color-palette">
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="color-palette__row">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p class="sidebar__header">
+            Capgemini warm
+            <a
+              href="https://visualidentity.capgemini.com/login/?ret=/look-feel/color-palette/"
+              target="_blank"
+            >
+              colors palette</a
+            >
+          </p>
+          <p class="sidebar__paragraph">
+            Aliquip fugiat sint nisi est mollit elit sint ex laboris est Lorem
+            ea adipisicing. Aliqua dolor quis ea labore. Veniam culpa nulla
+            Lorem eu sunt velit commodo nostrud incididunt minim.
+          </p>
+          <p class="sidebar__paragraph--center">
+            Officia commodo sit sunt duis. Occaecat incididunt ullamco excepteur
+            fugiat pariatur magna proident excepteur tempor quis non mollit
+            dolore aliquip. Eiusmod adipisicing ex laborum eiusmod duis amet
+            consequat nostrud culpa irure consectetur adipisicing adipisicing.
+            Tempor sunt id irure consequat cupidatat ex cupidatat elit elit
+            officia. Eu officia voluptate sit labore laboris enim voluptate
+            commodo aliqua id.
+          </p>
+          <p class="sidebar__paragraph">
+            Ex deserunt Lorem aliqua pariatur dolor. Anim exercitation consequat
+            nisi reprehenderit deserunt. Aute velit reprehenderit fugiat nulla
+            ullamco voluptate cillum. Elit nulla dolor exercitation cupidatat
+            esse consequat Lorem deserunt proident.
+          </p>
+        </aside>
+
+        <img
+          class="content__img"
+          src="/imgs/women-fashion.svg"
+          alt="women-fashion"
+        />
+      </article>
+      <footer class="footer">
+        <h2>Footer</h2>
+      </footer>
+    </main>
+  </body>
+</html>
