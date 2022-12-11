@@ -1,0 +1,93 @@
+.color-palette {
+  margin-top: 2rem;
+}
+
+.color-palette__row {
+  display: flex;
+  justify-content: center;
+}
+
+.color-palette .color-palette__row:nth-child(1) span:nth-child(1) {
+  background-color: #e557ad;
+}
+
+.color-palette .color-palette__row:nth-child(1) span:nth-child(2) {
+  background-color: #d13a8c;
+}
+
+.color-palette .color-palette__row:nth-child(1) span:nth-child(3) {
+  background-color: #ba2980;
+}
+
+.color-palette .color-palette__row:nth-child(1) span:nth-child(4) {
+  background-color: #a12980;
+}
+
+.color-palette .color-palette__row:nth-child(1) span:nth-child(5) {
+  background-color: #811b6f;
+}
+
+.color-palette .color-palette__row:nth-child(2) span:nth-child(1) {
+  background-color: #ffda80;
+}
+
+.color-palette .color-palette__row:nth-child(2) span:nth-child(2) {
+  background-color: #ffd068;
+}
+
+.color-palette .color-palette__row:nth-child(2) span:nth-child(3) {
+  background-color: #ffb24a;
+}
+
+.color-palette .color-palette__row:nth-child(2) span:nth-child(4) {
+  background-color: #ff9c29;
+}
+
+.color-palette .color-palette__row:nth-child(2) span:nth-child(5) {
+  background-color: #ff8e12;
+}
+
+.color-palette .color-palette__row:nth-child(3) span:nth-child(1) {
+  background-color: #ff5770;
+}
+
+.color-palette .color-palette__row:nth-child(3) span:nth-child(2) {
+  background-color: #ff455e;
+}
+
+.color-palette .color-palette__row:nth-child(3) span:nth-child(3) {
+  background-color: #ff304d;
+}
+
+.color-palette .color-palette__row:nth-child(3) span:nth-child(4) {
+  background-color: #e30021;
+}
+
+.color-palette .color-palette__row:nth-child(3) span:nth-child(5) {
+  background-color: #a6001a;
+}
+
+.color-palette .color-palette__row:nth-child(4) span:nth-child(1) {
+  background-color: #9e4780;
+}
+
+.color-palette .color-palette__row:nth-child(4) span:nth-child(2) {
+  background-color: #802b73;
+}
+
+.color-palette .color-palette__row:nth-child(4) span:nth-child(3) {
+  background-color: #750d5c;
+}
+
+.color-palette .color-palette__row:nth-child(4) span:nth-child(4) {
+  background-color: #590a42;
+}
+
+.color-palette .color-palette__row:nth-child(4) span:nth-child(5) {
+  background-color: #42142e;
+}
+
+.color-palette span {
+  height: 2rem;
+  width: 2rem;
+}
