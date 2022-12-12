@@ -1,0 +1,32 @@
+@use "./colors" as *;
+
+.color-palette {
+  margin-top: 2rem;
+  width: min-content;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  @each $row_number, $color in $colors-warm {
+    .color-palette__row {
+      &:nth-child(#{$row_number}) {
+        @each $span_number, $hue in $color {
+          // stylelint-disable-next-line max-nesting-depth
+
+          i {
+            &:nth-child(#{$span_number}) {
+              background-color: $hue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  i {
+    height: 2rem;
+    width: 2rem;
+  }
+}

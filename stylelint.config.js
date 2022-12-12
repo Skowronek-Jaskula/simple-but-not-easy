@@ -16,7 +16,7 @@ module.exports = {
     ],
     "rule-empty-line-before": [
       "always",
-      { except: ["inside-block", "first-nested"] },
+      { except: ["first-nested"] },
       {
         ignore: [
           "after-comment",
@@ -27,6 +27,7 @@ module.exports = {
         ],
       },
     ],
+
     "declaration-no-important": true,
     "order/properties-alphabetical-order": true,
     "selector-class-pattern":
@@ -72,7 +73,7 @@ module.exports = {
     "declaration-block-no-redundant-longhand-properties": [
       true,
       {
-        ignoreShorthands: ["/grid/"],
+        ignoreShorthands: ["/grid/", "/flex/", "/outline/"],
       },
     ],
   },

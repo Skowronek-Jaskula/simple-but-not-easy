@@ -2,68 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Modern Web Dev: styling</title>
+    <title>Simple but not Easy: Styling in the Modern Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/imgs/favicon.ico" />
+    <link rel="icon" href="/assets/images/favicon.ico" />
     <link rel="stylesheet" href="/dist/styles.css" />
   </head>
 
   <body>
     <main class="main">
-      <form action="checkboxes.html" class="form">
-        <div class="form-field">
-          <input type="checkbox" id="krakenCheckbox" name="monster2" />
-          <label for="krakenCheckbox">Kraken (checkbox)</label>
+      <form class="form">
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="checkbox"
+            id="krakenCheckbox"
+            name="monster2"
+          />
+          <label class="form__field-label" for="krakenCheckbox"
+            >Label 1 (checkbox)</label
+          >
         </div>
 
-        <div class="form-field">
-          <input type="checkbox" id="sasquatchCheckbox" name="monster2" />
-          <label for="sasquatchCheckbox">Sasquatch (checkbox)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="checkbox"
+            id="sasquatchCheckbox"
+            name="monster2"
+          />
+          <label class="form__field-label" for="sasquatchCheckbox"
+            >Label 2 (checkbox)</label
+          >
         </div>
 
-        <div class="form-field">
-          <input type="checkbox" id="mothmanCheckbox" name="monster2" />
-          <label for="mothmanCheckbox">Mothman (checkbox)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="checkbox"
+            id="mothmanCheckbox"
+            name="monster2"
+          />
+          <label class="form__field-label" for="mothmanCheckbox"
+            >Label 3 (checkbox)</label
+          >
         </div>
-        <div class="form-field">
-          <input type="checkbox" id="otherCheckbox" name="monster2" />
-          <label for="otherCheckbox">Other (checkbox)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="checkbox"
+            id="otherCheckbox"
+            name="monster2"
+          />
+          <label class="form__field-label" for="otherCheckbox"
+            >Label 4 (checkbox)</label
+          >
         </div>
       </form>
 
-      <form action="radios.html" class="form form--radios">
-        <div class="form-field">
-          <input type="radio" id="kraken" name="monster" />
-          <label for="kraken">Kraken (radio)</label>
+      <form class="form form--radios">
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="radio"
+            id="kraken"
+            name="monster"
+          />
+          <label class="form__field-label" for="kraken">Label 1 (radio)</label>
         </div>
 
-        <div class="form-field">
-          <input type="radio" id="sasquatch" name="monster" />
-          <label for="sasquatch">Sasquatch (radio)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="radio"
+            id="sasquatch"
+            name="monster"
+          />
+          <label class="form__field-label" for="sasquatch"
+            >Label 2 (radio)</label
+          >
         </div>
 
-        <div class="form-field">
-          <input type="radio" id="mothman" name="monster" />
-          <label for="mothman">Mothman (radio)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="radio"
+            id="mothman"
+            name="monster"
+          />
+          <label class="form__field-label" for="mothman">Label 3 (radio)</label>
         </div>
       </form>
 
-      <form action="texts.html" class="form form--texts">
-        <div class="form-field">
-          <input type="text" id="krakenText" name="monster" />
-          <label for="krakenText">Kraken (text)</label>
+      <form class="form form--texts">
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="text"
+            id="krakenText"
+            name="monster"
+          />
+          <label class="form__field-label" for="krakenText"
+            >Label 1 (text)</label
+          >
         </div>
 
-        <div class="form-field">
-          <input type="text" id="sasquatchText" name="monster" />
-          <label for="sasquatchText">Sasquatch (text)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="text"
+            id="sasquatchText"
+            name="monster"
+          />
+          <label class="form__field-label" for="sasquatchText"
+            >Label 2 (text)</label
+          >
         </div>
 
-        <div class="form-field">
-          <input type="text" id="mothmanText" name="monster" />
-          <label for="mothmanText">Mothman (text)</label>
+        <div class="form__field">
+          <input
+            class="form__field-input"
+            type="text"
+            id="mothmanText"
+            name="monster"
+          />
+          <label class="form__field-label" for="mothmanText"
+            >Label 3 (text)</label
+          >
         </div>
       </form>
     </main>
+    <div class="color-palette">
+      <a
+        href="https://visualidentity.capgemini.com/login/?ret=/look-feel/color-palette/"
+        target="_blank"
+      >
+        <span class="color-palette__row">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="color-palette__row">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="color-palette__row">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="color-palette__row">
+          <i></i><i></i><i></i><i></i><i></i>
+        </span>
+      </a>
+    </div>
+    <script>
+      function changeBackgroundColor(event) {
+        const changedColorEl = event.target.parentNode;
+
+        changedColorEl.style.backgroundColor = "#0070AC";
+      }
+    </script>
   </body>
 </html>
