@@ -9,98 +9,61 @@
   </head>
 
   <body>
-    <input
-      type="checkbox"
-      id="sidebarController"
-      class="controller__toggle"
-      data-label="Activated"
-    />
     <main class="main">
-      <header class="header">
-        <h1 class="header__unchecked">Capgemini Visual Identity :)</h1>
-        <div class="header__checked">
-          <h1>Nights in Piątkowo</h1>
-          <h2>José Goz</h2>
+      <form action="checkboxes.html" class="form">
+        <div class="form-field">
+          <input type="checkbox" id="krakenCheckbox" name="monster2" />
+          <label for="krakenCheckbox">Kraken (checkbox)</label>
         </div>
-      </header>
 
-      <article class="content">
-        <div class="content__main">
-          <label for="sidebarController" class="controller__label">
-            Label to activate the input
-          </label>
+        <div class="form-field">
+          <input type="checkbox" id="sasquatchCheckbox" name="monster2" />
+          <label for="sasquatchCheckbox">Sasquatch (checkbox)</label>
         </div>
-        <aside class="sidebar">
-          <div class="color-palette">
-            <div class="color-palette__row">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="color-palette__row">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="color-palette__row">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="color-palette__row">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <p class="sidebar__header">
-            Capgemini warm
-            <a
-              href="https://visualidentity.capgemini.com/login/?ret=/look-feel/color-palette/"
-              target="_blank"
-            >
-              colors palette</a
-            >
-          </p>
-          <p class="sidebar__paragraph">
-            Aliquip fugiat sint nisi est mollit elit sint ex laboris est Lorem
-            ea adipisicing. Aliqua dolor quis ea labore. Veniam culpa nulla
-            Lorem eu sunt velit commodo nostrud incididunt minim.
-          </p>
-          <p class="sidebar__paragraph--center">
-            Officia commodo sit sunt duis. Occaecat incididunt ullamco excepteur
-            fugiat pariatur magna proident excepteur tempor quis non mollit
-            dolore aliquip. Eiusmod adipisicing ex laborum eiusmod duis amet
-            consequat nostrud culpa irure consectetur adipisicing adipisicing.
-            Tempor sunt id irure consequat cupidatat ex cupidatat elit elit
-            officia. Eu officia voluptate sit labore laboris enim voluptate
-            commodo aliqua id.
-          </p>
-          <p class="sidebar__paragraph">
-            Ex deserunt Lorem aliqua pariatur dolor. Anim exercitation consequat
-            nisi reprehenderit deserunt. Aute velit reprehenderit fugiat nulla
-            ullamco voluptate cillum. Elit nulla dolor exercitation cupidatat
-            esse consequat Lorem deserunt proident.
-          </p>
-        </aside>
 
-        <img
-          class="content__img"
-          src="/imgs/women-fashion.svg"
-          alt="women-fashion"
-        />
-      </article>
-      <footer class="footer">
-        <h2>Footer</h2>
-      </footer>
+        <div class="form-field">
+          <input type="checkbox" id="mothmanCheckbox" name="monster2" />
+          <label for="mothmanCheckbox">Mothman (checkbox)</label>
+        </div>
+        <div class="form-field">
+          <input type="checkbox" id="otherCheckbox" name="monster2" />
+          <label for="otherCheckbox">Other (checkbox)</label>
+        </div>
+      </form>
+
+      <form action="radios.html" class="form form--radios">
+        <div class="form-field">
+          <input type="radio" id="kraken" name="monster" />
+          <label for="kraken">Kraken (radio)</label>
+        </div>
+
+        <div class="form-field">
+          <input type="radio" id="sasquatch" name="monster" />
+          <label for="sasquatch">Sasquatch (radio)</label>
+        </div>
+
+        <div class="form-field">
+          <input type="radio" id="mothman" name="monster" />
+          <label for="mothman">Mothman (radio)</label>
+        </div>
+      </form>
+
+      <form action="texts.html" class="form form--texts">
+        <div class="form-field">
+          <input type="text" id="krakenText" name="monster" />
+          <label for="krakenText">Kraken (text)</label>
+        </div>
+
+        <div class="form-field">
+          <input type="text" id="sasquatchText" name="monster" />
+          <label for="sasquatchText">Sasquatch (text)</label>
+        </div>
+
+        <div class="form-field">
+          <input type="text" id="mothmanText" name="monster" />
+          <label for="mothmanText">Mothman (text)</label>
+        </div>
+      </form>
     </main>
   </body>
 </html>

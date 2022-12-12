@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass \"styles/styles.scss\" \"dist/styles.css\" --watch",
-    "stylelint": "npx stylelint \"**/*.scss\" --config stylelint.config.js",
-    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix --config stylelint.config.js"
+    "sass": "sass \"styles/styles.scss\" \"dist/styles.css\" --watch"
   },
   "repository": {
     "type": "git",
