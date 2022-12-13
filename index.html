@@ -10,127 +10,228 @@
 
   <body>
     <main class="main">
+      <form action="submit.html" class="form">
+        <div class="form__fields-container">
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="krakenCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="krakenCheckbox"
+              >Label 1 (checkbox)</label
+            >
+          </div>
+
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="sasquatchCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="sasquatchCheckbox"
+              >Label 2 (checkbox)</label
+            >
+          </div>
+
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="mothmanCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="mothmanCheckbox"
+              >Label 3 (checkbox)</label
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="otherCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="otherCheckbox"
+              >Label 4 (checkbox)</label
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="sasquatchCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="sasquatchCheckbox"
+              >Label 2 (checkbox)</label
+            >
+          </div>
+
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="mothmanCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="mothmanCheckbox"
+              >Label 3 (checkbox)</label
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="otherCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="otherCheckbox"
+              >Label 4 (checkbox)</label
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="sasquatchCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="sasquatchCheckbox"
+              >Label 2 (checkbox)</label
+            >
+          </div>
+
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="mothmanCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="mothmanCheckbox"
+              >Label 3 (checkbox)</label
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="checkbox"
+              id="otherCheckbox"
+              name="monster2"
+            />
+            <label class="form__field-label" for="otherCheckbox"
+              >Label 4 (checkbox)</label
+            >
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="form__button"
+          onClick="changeBackgroundColor(event)"
+        >
+          Submit
+        </button>
+      </form>
+
       <form class="form">
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="checkbox"
-            id="krakenCheckbox"
-            name="monster2"
-          />
-          <label class="form__field-label" for="krakenCheckbox"
-            >Label 1 (checkbox)</label
-          >
-        </div>
+        <div class="form__fields-container">
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="radio"
+              id="kraken"
+              name="monster"
+            />
+            <label class="form__field-label" for="kraken"
+              >Label 1 (radio)</label
+            >
+          </div>
 
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="checkbox"
-            id="sasquatchCheckbox"
-            name="monster2"
-          />
-          <label class="form__field-label" for="sasquatchCheckbox"
-            >Label 2 (checkbox)</label
-          >
-        </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="radio"
+              id="sasquatch"
+              name="monster"
+            />
+            <label class="form__field-label" for="sasquatch"
+              >Label 2 (radio)</label
+            >
+          </div>
 
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="checkbox"
-            id="mothmanCheckbox"
-            name="monster2"
-          />
-          <label class="form__field-label" for="mothmanCheckbox"
-            >Label 3 (checkbox)</label
-          >
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="radio"
+              id="mothman"
+              name="monster"
+            />
+            <label class="form__field-label" for="mothman"
+              >Label 3 (radio)</label
+            >
+          </div>
         </div>
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="checkbox"
-            id="otherCheckbox"
-            name="monster2"
-          />
-          <label class="form__field-label" for="otherCheckbox"
-            >Label 4 (checkbox)</label
-          >
-        </div>
+        <button
+          class="form__button"
+          onClick="changeBackgroundColor(event)"
+          type="button"
+        >
+          Submit
+        </button>
       </form>
 
-      <form class="form form--radios">
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="radio"
-            id="kraken"
-            name="monster"
-          />
-          <label class="form__field-label" for="kraken">Label 1 (radio)</label>
-        </div>
+      <form class="form form--inverted">
+        <div class="form__fields-container">
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="text"
+              id="krakenText"
+              name="monster"
+            />
+            <label class="form__field-label" for="krakenText"
+              >Label 1 (text)</label
+            >
+          </div>
 
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="radio"
-            id="sasquatch"
-            name="monster"
-          />
-          <label class="form__field-label" for="sasquatch"
-            >Label 2 (radio)</label
-          >
-        </div>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="text"
+              id="sasquatchText"
+              name="monster"
+            />
+            <label class="form__field-label" for="sasquatchText"
+              >Label 2 (text)</label
+            >
+          </div>
 
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="radio"
-            id="mothman"
-            name="monster"
-          />
-          <label class="form__field-label" for="mothman">Label 3 (radio)</label>
+          <div class="form__field">
+            <input
+              class="form__field-input"
+              type="text"
+              id="mothmanText"
+              name="monster"
+            />
+            <label class="form__field-label" for="mothmanText"
+              >Label 3 (text)</label
+            >
+          </div>
         </div>
-      </form>
-
-      <form class="form form--texts">
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="text"
-            id="krakenText"
-            name="monster"
-          />
-          <label class="form__field-label" for="krakenText"
-            >Label 1 (text)</label
-          >
-        </div>
-
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="text"
-            id="sasquatchText"
-            name="monster"
-          />
-          <label class="form__field-label" for="sasquatchText"
-            >Label 2 (text)</label
-          >
-        </div>
-
-        <div class="form__field">
-          <input
-            class="form__field-input"
-            type="text"
-            id="mothmanText"
-            name="monster"
-          />
-          <label class="form__field-label" for="mothmanText"
-            >Label 3 (text)</label
-          >
-        </div>
+        <button
+          class="form__button form__button--inverted"
+          type="button"
+          onClick="changeBackgroundColor(event)"
+        >
+          Submit
+        </button>
       </form>
     </main>
+
     <div class="color-palette">
       <a
         href="https://visualidentity.capgemini.com/login/?ret=/look-feel/color-palette/"

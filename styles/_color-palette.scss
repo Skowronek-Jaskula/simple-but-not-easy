@@ -1,7 +1,10 @@
 @use "./colors" as *;
 
 .color-palette {
+  bottom: 5rem;
   margin-top: 2rem;
+  position: absolute;
+  right: 1rem;
   width: min-content;
 
   &__row {
