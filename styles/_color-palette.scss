@@ -1,8 +1,7 @@
 @use "./colors" as *;
 
 .color-palette {
-  bottom: 5rem;
-  margin-top: 2rem;
+  bottom: 1rem;
   position: absolute;
   right: 1rem;
   width: min-content;
@@ -29,7 +28,7 @@
   }
 
   i {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }

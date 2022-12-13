@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  box-sizing: border-box;
   font-family: Ubuntu, sans-serif;
   margin: 0 auto;
 }
@@ -20,4 +19,8 @@ button {
   margin: 0;
   outline: none;
   padding: 0;
+}
+
+p {
+  margin: 0;
 }
