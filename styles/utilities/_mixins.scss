@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+@use "../utilities/colors" as *;
+
+@mixin box-shadows($state, $color: false) {
+  @if $state == "hover" {
+    box-shadow: inset 0 0 0 $width-hover $highlight;
+
+    @if $color {
+      box-shadow: inset 0 0 0 $width-hover $color;
+    }
+  }
+  @if $state == "focus" {
+    box-shadow: inset 0 0 0 #{$width-focus-inner} $main,
+      0 0 0 $width-focus-outer $focus;
+  }
+  @if $state == "normal" {
+    @if $color {
+      box-shadow: inset 0 0 0 #{$width} $color;
+    } @else {
+      box-shadow: inset 0 0 0 #{$width} $main;
+    }
+  }
+}

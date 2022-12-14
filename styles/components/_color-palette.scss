@@ -1,8 +1,17 @@
 @use "../utilities/colors" as *;
 
 .color-palette {
+  filter: grayscale(1);
   margin: 0 auto 1rem;
+  opacity: 0.5;
+  transition: 0.2s all;
   width: min-content;
+
+  &:hover,
+  &.colorful {
+    filter: none;
+    opacity: 1;
+  }
 
   &__row {
     display: flex;

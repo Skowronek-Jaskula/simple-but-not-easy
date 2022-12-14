@@ -3,8 +3,17 @@
 
 .footer {
   background-color: variables.$cap-yellow-1;
+  border-radius: 0 0 4rem 4rem;
   color: variables.$cap-velvet-5;
+  filter: grayscale(1);
   height: variables.$footer-height;
   line-height: variables.$footer-height;
+  opacity: 0.5;
   text-align: center;
+
+  &:hover,
+  &.colorful {
+    filter: none;
+    opacity: 1;
+  }
 }

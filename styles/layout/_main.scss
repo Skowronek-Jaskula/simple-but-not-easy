@@ -16,10 +16,19 @@
     background-color: variables.$cap-yellow-1;
     border-radius: 0.25rem;
     color: variables.$cap-velvet-5;
+    filter: grayscale(1);
     grid-area: button;
     margin-top: 1rem;
+    opacity: 0.5;
     padding: 0.5rem 1.5rem;
+    transition: 0.2s all;
     width: fit-content;
+
+    &:hover,
+    &.colorful {
+      filter: none;
+      opacity: 1;
+    }
   }
 
   &__article {
@@ -38,7 +47,16 @@
   }
 
   &__image {
+    filter: grayscale(1);
     grid-area: image;
     max-height: 100%;
+    opacity: 0.5;
+    transition: 0.2s all;
+
+    &:hover,
+    &.colorful {
+      filter: none;
+      opacity: 1;
+    }
   }
 }
