@@ -9,7 +9,12 @@
   </head>
 
   <body>
-    <input class="controller__input" type="checkbox" id="input" />
+    <input
+      class="controller__input"
+      type="checkbox"
+      id="input"
+      data-label="Full width"
+    />
     <label class="controller__label" for="input">Show full width</label>
 
     <header class="header">
@@ -17,28 +22,10 @@
     </header>
 
     <main class="main">
-      <article class="article">
-        <p>
-          Non aliquip deserunt consectetur qui nulla veniam commodo labore et
-          sunt deserunt sint. Proident nulla reprehenderit do anim sit
-          incididunt sunt id sint. Cillum proident sint et deserunt deserunt
-          nisi consectetur minim. Exercitation dolore minim amet laborum qui
-          duis fugiat excepteur proident amet. Exercitation esse aliqua laborum
-          occaecat pariatur fugiat Lorem.
-        </p>
-        <p>
-          Eiusmod ut labore fugiat deserunt ad aliquip anim pariatur duis ad
-          est. Sit duis id ea commodo consequat incididunt ullamco elit in enim.
-          Do velit sint proident irure eiusmod minim adipisicing nisi ipsum
-          Lorem exercitation.
-        </p>
-        <p>
-          Eiusmod culpa velit eiusmod velit adipisicing aliquip elit. Mollit in
-          et est laborum dolore duis culpa. Anim anim consequat tempor ut eu et.
-          Nulla qui fugiat dolor proident ea ipsum deserunt duis proident ex. Eu
-          occaecat laborum minim ut ad aliquip deserunt in cupidatat dolor quis
-          reprehenderit aliquip consectetur.
-        </p>
+      <button class="main__button" onclick="toggleColors()">
+        Make us colorful
+      </button>
+      <article class="main__article">
         <p>
           Anim anim dolor ad ad id. Anim ullamco qui aliquip dolore. Sint duis
           anim et magna ad exercitation esse do dolore occaecat qui cillum culpa
@@ -63,91 +50,80 @@
           et est laborum dolore duis culpa. Anim anim consequat tempor ut eu et.
           Nulla qui fugiat dolor proident ea ipsum deserunt duis proident ex. Eu
           occaecat laborum minim ut ad aliquip deserunt in cupidatat dolor quis
-          reprehenderit aliquip consectetur.
-        </p>
-        <p>
-          Anim anim dolor ad ad id. Anim ullamco qui aliquip dolore. Sint duis
-          anim et magna ad exercitation esse do dolore occaecat qui cillum culpa
-          do.
-        </p>
-        <p>
-          Non aliquip deserunt consectetur qui nulla veniam commodo labore et
-          sunt deserunt sint. Proident nulla reprehenderit do anim sit
-          incididunt sunt id sint. Cillum proident sint et deserunt deserunt
-          nisi consectetur minim. Exercitation dolore minim amet laborum qui
-          duis fugiat excepteur proident amet. Exercitation esse aliqua laborum
-          occaecat pariatur fugiat Lorem.
+          reprehenderit aliquip consectetur. Anim anim dolor ad ad id. Anim
+          ullamco qui aliquip dolore. Sint duis anim et magna ad exercitation
+          esse do dolore occaecat qui cillum culpa do. Non aliquip deserunt
+          consectetur qui nulla veniam commodo labore et sunt deserunt sint.
+          Proident nulla reprehenderit do anim sit incididunt sunt id sint.
+          Cillum proident sint et deserunt deserunt nisi consectetur minim.
+          Exercitation dolore minim amet laborum qui duis fugiat excepteur
+          proident amet. Exercitation esse aliqua laborum occaecat pariatur
+          fugiat Lorem.
         </p>
       </article>
-      <aside class="sidebar">
+      <aside class="main__sidebar">
+        <color-palette>
+          <div class="color-palette">
+            <a
+              href="https://visualidentity.capgemini.com/login/?ret=/look-feel/color-palette/"
+              target="_blank"
+            >
+              <span class="color-palette__row">
+                <i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <span class="color-palette__row">
+                <i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <span class="color-palette__row">
+                <i></i><i></i><i></i><i></i><i></i>
+              </span>
+              <span class="color-palette__row">
+                <i></i><i></i><i></i><i></i><i></i>
+              </span>
+            </a></div
+        ></color-palette>
         <p>
           Reprehenderit mollit commodo laborum proident aute magna qui anim
           irure. Pariatur velit Lorem ex ad esse elit commodo nisi. Laborum
-          dolore ipsum exercitation ipsum. Labore irure anim pariatur aliquip
-          est proident. Est quis in ut id deserunt. Proident anim non in sint
-          officia id ea. Lorem nulla et id adipisicing.
+          dolore ipsum exercitation ipsum.
         </p>
         <p>
           Aliqua excepteur dolore eu qui. Dolor velit adipisicing occaecat
           incididunt. Ad eu esse et eu sunt. Laboris eiusmod adipisicing in
-          deserunt laborum ipsum fugiat velit esse ad duis Lorem nisi. Cupidatat
-          ullamco amet minim mollit ad fugiat anim ex dolor ipsum laboris
-          occaecat. Ad esse do veniam aliqua laboris qui eiusmod. Elit dolor ut
-          nostrud nulla.
+          deserunt laborum ipsum fugiat velit esse ad duis Lorem nisi.
+        </p>
+        <p>
+          Ad esse do veniam aliqua laboris qui eiusmod. Elit dolor ut nostrud
+          nulla.
         </p>
         <p>
           Sit nisi occaecat non minim do officia proident enim elit nostrud.
           Reprehenderit ullamco consequat labore mollit cillum mollit occaecat
-          laborum ad dolore est. Ex sit laboris qui ut cupidatat mollit
-          reprehenderit sunt reprehenderit quis ullamco officia minim. Officia
-          excepteur aliqua exercitation eiusmod consectetur sunt ullamco.
-          Laborum esse est nisi velit nulla.
+          laborum ad dolore est.
         </p>
         <p>
-          Sit consectetur id ad et sunt. Commodo adipisicing irure proident
-          adipisicing amet laboris aliqua nostrud. Non voluptate nostrud aliqua
-          ea laboris ad. Magna et duis laboris do eu est aliquip id non. Ut
-          dolor sit ipsum sit duis ex ea. Eu fugiat reprehenderit adipisicing
-          qui laboris anim mollit velit mollit nisi. Reprehenderit aliqua do
-          velit deserunt culpa duis ut minim do commodo esse.
-        </p>
-        <p>
-          Reprehenderit labore do voluptate qui laborum officia veniam Lorem
-          duis sit esse. Enim ipsum veniam reprehenderit ipsum. Et labore
-          officia reprehenderit dolor. Adipisicing est in velit tempor nulla
-          nostrud minim commodo Lorem pariatur exercitation adipisicing sunt
-          consectetur. Ad adipisicing veniam magna nisi sint qui incididunt
-          reprehenderit elit velit.
-        </p>
-        <p>
-          Elit non veniam qui consequat ea non. Quis adipisicing minim magna
-          nisi culpa tempor eu irure. Et dolor minim ullamco laboris do esse
-          cupidatat et.
+          Ex sit laboris qui ut cupidatat mollit reprehenderit sunt
+          reprehenderit quis ullamco officia minim. Officia excepteur aliqua
+          exercitation eiusmod consectetur sunt ullamco.
         </p>
       </aside>
-      <img class="image" src="./assets/images/women-fashion.svg" alt="" />
+      <img class="main__image" src="./assets/images/women-fashion.svg" alt="" />
     </main>
     <footer class="footer">
       <h2>Footer</h2>
     </footer>
-    <div class="color-palette">
-      <a
-        href="https://visualidentity.capgemini.com/login/?ret=/look-feel/color-palette/"
-        target="_blank"
-      >
-        <span class="color-palette__row">
-          <i></i><i></i><i></i><i></i><i></i>
-        </span>
-        <span class="color-palette__row">
-          <i></i><i></i><i></i><i></i><i></i>
-        </span>
-        <span class="color-palette__row">
-          <i></i><i></i><i></i><i></i><i></i>
-        </span>
-        <span class="color-palette__row">
-          <i></i><i></i><i></i><i></i><i></i>
-        </span>
-      </a>
-    </div>
+    <script>
+      function toggleColors() {
+        const element1 = document.querySelector(".color-palette");
+        const element2 = document.querySelector(".main__image");
+        const element3 = document.querySelector(".main__button");
+        const element4 = document.querySelector(".footer");
+
+        const elArray = [element1, element2, element3, element4];
+        elArray.forEach((element) => {
+          element.classList.toggle("colorful");
+        });
+      }
+    </script>
   </body>
 </html>

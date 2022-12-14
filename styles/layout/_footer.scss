@@ -1,0 +1,10 @@
+@use "../utilities/colors";
+@use "../utilities/variables";
+
+.footer {
+  background-color: variables.$cap-yellow-1;
+  color: variables.$cap-velvet-5;
+  height: variables.$footer-height;
+  line-height: variables.$footer-height;
+  text-align: center;
+}

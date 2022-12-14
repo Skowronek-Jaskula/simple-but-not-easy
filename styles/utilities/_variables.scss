@@ -2,5 +2,22 @@ $cap-yellow-1: #ffda80;
 $cap-velvet-2: #802b73;
 $cap-velvet-5: #42142e;
 $cap-red-5: #a6001a;
-$header-height: 10rem;
+$header-height: 6rem;
 $footer-height: 5rem;
+$body-top-margin: 2rem;
+
+/// Width of border in **normal** state.
+/// @type Number
+$width: 0.0625rem;
+
+/// Width of border on **mouse over**.
+/// @type Number
+$width-hover: $width * 2;
+
+/// Width of **inner** border of **focused** element.
+/// @type Number
+$width-focus-inner: $width * 2;
+
+/// Width of **outer** border of **focused** element.
+/// @type Number
+$width-focus-outer: $width * 2;

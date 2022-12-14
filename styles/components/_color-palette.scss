@@ -1,9 +1,7 @@
 @use "../utilities/colors" as *;
 
 .color-palette {
-  bottom: 1rem;
-  position: absolute;
-  right: 1rem;
+  margin: 0 auto 1rem;
   width: min-content;
 
   &__row {

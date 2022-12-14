@@ -1,67 +1,16 @@
 @use "./base/reset";
+@use "./base/typography";
 @use "./utilities/variables";
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";
 @use "./components/color-palette";
 @use "./components/controller";
-
-:root {
-  --content-width: 60vw;
-}
 
 .header,
 .main,
 .footer {
   margin: 0 auto;
+  transition: all 0.2s ease-in-out;
   width: var(--content-width);
 }
-
-.header {
-  align-items: center;
-  background-color: variables.$cap-velvet-5;
-  color: variables.$cap-yellow-1;
-  display: flex;
-  height: variables.$header-height;
-  justify-content: center;
-}
-
-.footer {
-  background-color: variables.$cap-yellow-1;
-  color: variables.$cap-velvet-5;
-  height: variables.$footer-height;
-  line-height: variables.$footer-height;
-  text-align: center;
-}
-
-p + p {
-  margin-top: 1rem;
-}
-
-.main {
-  display: grid;
-  gap: 1rem;
-  grid-template-areas:
-    "label    input     sidebar   sidebar"
-    "article  article   sidebar   sidebar"
-    ".        image     sidebar   sidebar";
-  grid-template-columns: 4fr 2fr 1fr 1fr;
-  height: calc(100vh - 10rem - 5rem);
-  overflow: auto;
-}
-
-.article {
-  grid-area: article;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  overflow-y: auto;
-  padding: 1rem 0.5rem 1rem 0;
-}
-
-.image {
-  grid-area: image;
-  max-height: 100%;
-}
-
-// Homework:
-//    1. ułożyć pliki zgodnie z Pattern 7.1
-//    2. podejrzeć stylowanie checkboxa

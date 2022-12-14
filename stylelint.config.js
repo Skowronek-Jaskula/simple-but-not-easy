@@ -50,7 +50,6 @@ module.exports = {
     "property-no-vendor-prefix": [
       true,
       {
-        // disabled for `-webkit-appearance` to allow browser independent styling of inputs, buttons and other form elements
         // disabled for `-webkit-box-orient` to allow box-flex display: https://developer.mozilla.org/en-US/docs/Web/CSS/box-flex
         ignoreProperties: ["appearance", "box-orient"],
       },

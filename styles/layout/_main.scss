@@ -1,0 +1,44 @@
+@use "../utilities/variables";
+
+.main {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "button   .         sidebar"
+    "article  article   sidebar"
+    ".        image     sidebar";
+  grid-template-columns: 2fr 1fr 1fr;
+  max-height: calc(100vh - 10rem - 5rem);
+  overflow: auto;
+  padding: 0.5rem;
+
+  &__button {
+    background-color: variables.$cap-yellow-1;
+    border-radius: 0.25rem;
+    color: variables.$cap-velvet-5;
+    grid-area: button;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+  }
+
+  &__article {
+    grid-area: article;
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+    overflow-y: auto;
+    padding: 1rem 0.5rem 1rem 0;
+
+    p {
+      font-size: 0.75rem;
+      text-align: justify;
+    }
+  }
+
+  &__image {
+    grid-area: image;
+    max-height: 100%;
+  }
+}
