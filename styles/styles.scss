@@ -5,9 +5,11 @@ $cap-yellow-1: #ffda80;
 $cap-velvet-2: #802b73;
 $cap-velvet-5: #42142e;
 $cap-red-5: #a6001a;
+$header-height: 10rem;
+$footer-height: 5rem;
 
 :root {
-  --content-width: 80vw;
+  --content-width: 60vw;
 }
 
 .header,
@@ -18,13 +20,67 @@ $cap-red-5: #a6001a;
 }
 
 .header {
+  align-items: center;
   background-color: $cap-velvet-5;
   color: $cap-yellow-1;
-  height: 10rem;
+  display: flex;
+  height: $header-height;
+  justify-content: center;
 }
 
 .footer {
   background-color: $cap-yellow-1;
   color: $cap-velvet-5;
-  height: 5rem;
+  height: $footer-height;
+  line-height: $footer-height;
+  text-align: center;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+.main {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "label    input     sidebar   sidebar"
+    "article  article   sidebar   sidebar"
+    ".        image     sidebar   sidebar";
+  grid-template-columns: 4fr 2fr 1fr 1fr;
+  height: calc(100vh - 10rem - 5rem);
+  overflow: auto;
+}
+
+.label {
+  grid-area: label;
+}
+
+.input {
+  grid-area: input;
+}
+
+.article {
+  grid-area: article;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  overflow-y: auto;
+  padding: 1rem 0.5rem 1rem 0;
+}
+
+.image {
+  grid-area: image;
+  max-height: 100%;
+}
+
+.input[type="checkbox"] {
+  &:checked {
+    --content-width: 80vw !important;
+  }
+
+  &:not(:checked) {
+    outline: 2px solid blue;
+  }
 }
