@@ -1,12 +1,7 @@
-@use "./reset";
-@use "./color-palette";
-
-$cap-yellow-1: #ffda80;
-$cap-velvet-2: #802b73;
-$cap-velvet-5: #42142e;
-$cap-red-5: #a6001a;
-$header-height: 10rem;
-$footer-height: 5rem;
+@use "./base/reset";
+@use "./utilities/variables";
+@use "./components/color-palette";
+@use "./components/controller";
 
 :root {
   --content-width: 60vw;
@@ -21,18 +16,18 @@ $footer-height: 5rem;
 
 .header {
   align-items: center;
-  background-color: $cap-velvet-5;
-  color: $cap-yellow-1;
+  background-color: variables.$cap-velvet-5;
+  color: variables.$cap-yellow-1;
   display: flex;
-  height: $header-height;
+  height: variables.$header-height;
   justify-content: center;
 }
 
 .footer {
-  background-color: $cap-yellow-1;
-  color: $cap-velvet-5;
-  height: $footer-height;
-  line-height: $footer-height;
+  background-color: variables.$cap-yellow-1;
+  color: variables.$cap-velvet-5;
+  height: variables.$footer-height;
+  line-height: variables.$footer-height;
   text-align: center;
 }
 
@@ -52,14 +47,6 @@ p + p {
   overflow: auto;
 }
 
-.label {
-  grid-area: label;
-}
-
-.input {
-  grid-area: input;
-}
-
 .article {
   grid-area: article;
 }
@@ -75,12 +62,6 @@ p + p {
   max-height: 100%;
 }
 
-.input[type="checkbox"] {
-  &:checked {
-    --content-width: 80vw !important;
-  }
-
-  &:not(:checked) {
-    outline: 2px solid blue;
-  }
-}
+// Homework:
+//    1. ułożyć pliki zgodnie z Pattern 7.1
+//    2. podejrzeć stylowanie checkboxa

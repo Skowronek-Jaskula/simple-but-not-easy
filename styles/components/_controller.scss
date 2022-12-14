@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+
+.controller {
+  &__input[type="checkbox"] {
+    position: absolute;
+    top: calc(variables.$header-height + 2rem);
+
+    &:checked {
+      left: calc(10vw + 2rem);
+
+      ~ * {
+        --content-width: 80vw;
+      }
+    }
+
+    &:not(:checked) {
+      left: calc(20vw + 2rem);
+    }
+  }
+
+  &__label {
+    position: absolute;
+  }
+}
