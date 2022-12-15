@@ -5,6 +5,7 @@
 .main {
   @extend %layout-width;
 
+  box-shadow: inset 0 0 1px variables.$cap-velvet-5;
   display: grid;
   gap: 1rem;
   grid-template-areas:
@@ -12,9 +13,8 @@
     "article  article   sidebar"
     ".        image     sidebar";
   grid-template-columns: 2fr 1fr 1fr;
-  max-height: calc(100vh - 10rem - 5rem);
-  overflow: auto;
-  padding: 0.5rem;
+  height: calc(100vh - variables.$header-height - variables.$footer-height);
+  padding: 0.5rem 1.5rem;
 
   &__button {
     @include mixins.border-radius(0.25rem);
@@ -23,6 +23,7 @@
     background-color: variables.$cap-yellow-1;
     color: variables.$cap-velvet-5;
     grid-area: button;
+    height: 2rem;
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
     width: fit-content;

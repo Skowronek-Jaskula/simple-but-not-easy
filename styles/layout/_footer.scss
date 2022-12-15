@@ -5,7 +5,7 @@
 .footer {
   @extend %layout-width;
 
-  @include mixins.border-radius(4rem, "bottom");
+  @include mixins.border-radius(2rem, "bottom");
   @include mixins.toggle-colors();
 
   background-color: variables.$cap-yellow-1;

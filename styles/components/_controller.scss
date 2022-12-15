@@ -2,20 +2,22 @@
 @use "../utilities/mixins" as *;
 @use "../utilities/colors" as *;
 
-$_controller-height: 1.5rem;
-$_controller-width: 6rem;
+$_controller-height: 1rem;
+$_controller-width: 3rem;
 
 .controller {
+  left: 2rem;
+  position: absolute;
+
   &__input[type="checkbox"] {
     @include border-radius(calc(#{$_controller-height} / 2));
 
     appearance: none;
-    background-color: $grey2;
+    background-color: $grey3;
     bottom: calc($_controller-height / -2);
     box-shadow: 0 0 0 1px $grey4;
     height: $_controller-height;
-    position: absolute;
-    right: calc(calc(-1 * $_controller-width) + calc($_controller-height / 2));
+    position: relative;
     width: $_controller-width;
 
     &,
@@ -27,7 +29,8 @@ $_controller-width: 6rem;
     &::before {
       @include border-radius(calc($_controller-height / 2));
 
-      background-color: white;
+      background-color: $grey1;
+      box-shadow: 0 0 0 1px $grey4;
       content: "";
       display: block;
       height: $_controller-height;
@@ -38,8 +41,10 @@ $_controller-width: 6rem;
 
     &::after {
       align-items: center;
+      color: #fff;
       content: attr(data-label);
       display: flex;
+      font-size: 0.75rem;
       height: $_controller-height;
       justify-content: center;
       position: absolute;
@@ -47,7 +52,7 @@ $_controller-width: 6rem;
     }
 
     &:checked {
-      background-color: #f03;
+      background-color: variables.$cap-velvet-2;
 
       &::before {
         left: calc($_controller-width - $_controller-height);
@@ -55,29 +60,23 @@ $_controller-width: 6rem;
 
       &::after {
         opacity: 1;
-        // content: attr(data-label);
       }
     }
 
     &:not(:checked) {
       &::after {
         opacity: 0;
-        // content: attr(data-label);
       }
     }
-  }
-
-  &__label {
-    position: absolute;
   }
 }
 
 body {
   &:has(.controller__input:checked) {
-    --content-width: 80vw;
+    --content-width: 100vw;
   }
 
   &:has(.controller__input:not(:checked)) {
-    --content-width: 60vw;
+    --content-width: 85vw;
   }
 }

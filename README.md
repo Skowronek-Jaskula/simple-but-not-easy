@@ -10,12 +10,10 @@ This branch entry point:
 
 <img src="./assets/this-branch/target1.jpg" width="500" />
 
-### after button clicked:
+### after checkbox checked:
 
 <img src="./assets/this-branch/target2.jpg" width="500" />
 
-### after checkbox checked:
+### after button clicked and checkbox checked:
 
 <img src="./assets/this-branch/target3.jpg" width="500" />
-
-USE SASS `@mixins`
