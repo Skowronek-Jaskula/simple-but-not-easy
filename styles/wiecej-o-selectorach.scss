@@ -1,0 +1,35 @@
+@use "./utilities/variables" as *;
+@use "./utilities/helpers" as *;
+@use "./utilities/mixins" as *;
+
+// :is(.footer.colorful) h2 {
+//   color: red;
+// }
+
+// :where(.footer.colorful) h2 {
+//   color: yellowgreen;
+// }
+
+.parent {
+  .child {
+    .grand-child & {
+      &.sibling {
+      }
+    }
+  }
+}
+
+.grand-parent {
+  .parent {
+    @at-root .child {
+    }
+  }
+}
+
+h4 {
+  color: #000;
+
+  .colorful & {
+    color: #fff;
+  }
+}

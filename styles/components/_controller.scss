@@ -74,9 +74,45 @@ $_controller-width: 3rem;
 body {
   &:has(.controller__input:checked) {
     --content-width: 100vw;
+
+    .header {
+      &--unchecked {
+        display: none;
+      }
+
+      &--checked {
+        display: block;
+      }
+    }
+
+    .main {
+      &__image {
+        opacity: 0;
+        transition: 2s opacity;
+        transition-delay: 10s;
+      }
+
+      &::after {
+        content: "";
+      }
+    }
   }
 
   &:has(.controller__input:not(:checked)) {
     --content-width: 85vw;
+
+    .header {
+      &--unchecked {
+        display: block;
+      }
+
+      &--checked {
+        display: none;
+      }
+    }
+
+    .main::after {
+      content: none;
+    }
   }
 }

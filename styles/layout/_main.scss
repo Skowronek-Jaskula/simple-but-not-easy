@@ -11,10 +11,11 @@
   grid-template-areas:
     "button   .         sidebar"
     "article  article   sidebar"
-    ".        image     sidebar";
+    ".        .         sidebar";
   grid-template-columns: 2fr 1fr 1fr;
   height: calc(100vh - variables.$header-height - variables.$footer-height);
   padding: 0.5rem 1.5rem;
+  position: relative;
 
   &__button {
     @include mixins.border-radius(0.25rem);
@@ -51,7 +52,19 @@
   &__image {
     @include mixins.toggle-colors();
 
+    bottom: -1rem;
     grid-area: image;
-    max-height: 100%;
+    height: 10rem;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::after {
+    background-image: url("../../assets/images/piatkowo.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    inset: 0;
+    position: absolute;
   }
 }
