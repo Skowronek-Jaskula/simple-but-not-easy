@@ -1,0 +1,29 @@
+@mixin border-radius($radius, $side: false) {
+  @if ($side) {
+    @if ($side == "top") {
+      border-radius: $radius $radius 0 0;
+    }
+    @if ($side == "bottom") {
+      border-radius: 0 0 $radius $radius;
+    }
+  } @else {
+    border-radius: $radius;
+  }
+}
+@mixin toggle-colors() {
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: 0.2s all;
+
+  &.colorful {
+    filter: none;
+    opacity: 1;
+  }
+}
+
+// homework:
+// @mixin box-shadow($state, $color: false)
+// $state: initial hover focus
+
+// +
+// poprawić kolory

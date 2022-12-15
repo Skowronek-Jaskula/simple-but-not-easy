@@ -1,12 +1,20 @@
+@use "../utilities/mixins";
 @use "../utilities/colors" as *;
 
 .color-palette {
+  @include mixins.toggle-colors();
+
   margin: 0 auto 1rem;
   width: min-content;
 
   &__row {
     display: flex;
     justify-content: center;
+  }
+
+  i {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   @each $row_number, $color in $colors-warm {
@@ -23,10 +31,5 @@
         }
       }
     }
-  }
-
-  i {
-    height: 1.5rem;
-    width: 1.5rem;
   }
 }

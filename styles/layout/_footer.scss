@@ -1,7 +1,13 @@
-@use "../utilities/colors";
 @use "../utilities/variables";
+@use "../utilities/helpers";
+@use "../utilities/mixins";
 
 .footer {
+  @extend %layout-width;
+
+  @include mixins.border-radius(4rem, "bottom");
+  @include mixins.toggle-colors();
+
   background-color: variables.$cap-yellow-1;
   color: variables.$cap-velvet-5;
   height: variables.$footer-height;

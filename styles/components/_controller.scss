@@ -1,24 +1,83 @@
 @use "../utilities/variables";
+@use "../utilities/mixins" as *;
+@use "../utilities/colors" as *;
+
+$_controller-height: 1.5rem;
+$_controller-width: 6rem;
 
 .controller {
   &__input[type="checkbox"] {
+    @include border-radius(calc(#{$_controller-height} / 2));
+
+    appearance: none;
+    background-color: $grey2;
+    bottom: calc($_controller-height / -2);
+    box-shadow: 0 0 0 1px $grey4;
+    height: $_controller-height;
     position: absolute;
-    top: calc(variables.$header-height + 2rem);
+    right: calc(calc(-1 * $_controller-width) + calc($_controller-height / 2));
+    width: $_controller-width;
+
+    &,
+    &::after,
+    &::before {
+      transition: 0.2s all;
+    }
+
+    &::before {
+      @include border-radius(calc($_controller-height / 2));
+
+      background-color: white;
+      content: "";
+      display: block;
+      height: $_controller-height;
+      left: 0;
+      position: absolute;
+      width: $_controller-height;
+    }
+
+    &::after {
+      align-items: center;
+      content: attr(data-label);
+      display: flex;
+      height: $_controller-height;
+      justify-content: center;
+      position: absolute;
+      width: calc($_controller-width - $_controller-height);
+    }
 
     &:checked {
-      left: calc(10vw + 2rem);
+      background-color: #f03;
 
-      ~ * {
-        --content-width: 80vw;
+      &::before {
+        left: calc($_controller-width - $_controller-height);
+      }
+
+      &::after {
+        opacity: 1;
+        // content: attr(data-label);
       }
     }
 
     &:not(:checked) {
-      left: calc(20vw + 2rem);
+      &::after {
+        opacity: 0;
+        // content: attr(data-label);
+      }
     }
   }
 
   &__label {
     position: absolute;
+  }
+}
+
+body {
+  &:has(.controller__input:checked) {
+    --content-width: 80vw;
+  }
+
+  &:has(.controller__input:not(:checked)) {
+    --content-width: 60vw;
   }
 }

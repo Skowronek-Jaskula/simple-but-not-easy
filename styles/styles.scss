@@ -1,16 +1,7 @@
 @use "./base/reset";
 @use "./base/typography";
-@use "./utilities/variables";
 @use "./layout/header";
 @use "./layout/main";
 @use "./layout/footer";
 @use "./components/color-palette";
 @use "./components/controller";
-
-.header,
-.main,
-.footer {
-  margin: 0 auto;
-  transition: all 0.2s ease-in-out;
-  width: var(--content-width);
-}

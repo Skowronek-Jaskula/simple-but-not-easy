@@ -1,10 +1,17 @@
 @use "../utilities/variables";
+@use "../utilities/helpers";
+@use "../utilities/mixins";
 
 .header {
+  @extend %layout-width;
+
+  @include mixins.border-radius(1rem, "top");
+
   align-items: center;
   background-color: variables.$cap-velvet-5;
   color: variables.$cap-yellow-1;
   display: flex;
   height: variables.$header-height;
   justify-content: center;
+  position: relative;
 }

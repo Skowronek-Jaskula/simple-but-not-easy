@@ -1,6 +1,10 @@
 @use "../utilities/variables";
+@use "../utilities/helpers";
+@use "../utilities/mixins";
 
 .main {
+  @extend %layout-width;
+
   display: grid;
   gap: 1rem;
   grid-template-areas:
@@ -13,8 +17,10 @@
   padding: 0.5rem;
 
   &__button {
+    @include mixins.border-radius(0.25rem);
+    @include mixins.toggle-colors();
+
     background-color: variables.$cap-yellow-1;
-    border-radius: 0.25rem;
     color: variables.$cap-velvet-5;
     grid-area: button;
     margin-top: 1rem;
@@ -38,6 +44,8 @@
   }
 
   &__image {
+    @include mixins.toggle-colors();
+
     grid-area: image;
     max-height: 100%;
   }
