@@ -26,52 +26,7 @@
         Make us colorful
       </button>
       <article class="main__article">
-        <p>
-          Anim anim dolor ad ad id. Anim ullamco qui aliquip dolore. Sint duis
-          anim et magna ad exercitation esse do dolore occaecat qui cillum culpa
-          do.
-        </p>
-        <p>
-          Non aliquip deserunt consectetur qui nulla veniam commodo labore et
-          sunt deserunt sint. Proident nulla reprehenderit do anim sit
-          incididunt sunt id sint. Cillum proident sint et deserunt deserunt
-          nisi consectetur minim. Exercitation dolore minim amet laborum qui
-          duis fugiat excepteur proident amet. Exercitation esse aliqua laborum
-          occaecat pariatur fugiat Lorem.
-        </p>
-        <p>
-          Eiusmod ut labore fugiat deserunt ad aliquip anim pariatur duis ad
-          est. Sit duis id ea commodo consequat incididunt ullamco elit in enim.
-          Do velit sint proident irure eiusmod minim adipisicing nisi ipsum
-          Lorem exercitation.
-        </p>
-        <p>
-          Eiusmod culpa velit eiusmod velit adipisicing aliquip elit. Mollit in
-          et est laborum dolore duis culpa. Anim anim consequat tempor ut eu et.
-          Nulla qui fugiat dolor proident ea ipsum deserunt duis proident ex. Eu
-          occaecat laborum minim ut ad aliquip deserunt in cupidatat dolor quis
-          reprehenderit aliquip consectetur. Anim anim dolor ad ad id. Anim
-          ullamco qui aliquip dolore. Sint duis anim et magna ad exercitation
-          esse do dolore occaecat qui cillum culpa do. Non aliquip deserunt
-          consectetur qui nulla veniam commodo labore et sunt deserunt sint.
-          Proident nulla reprehenderit do anim sit incididunt sunt id sint.
-          Cillum proident sint et deserunt deserunt nisi consectetur minim.
-          Exercitation dolore minim amet laborum qui duis fugiat excepteur
-          proident amet. Exercitation esse aliqua laborum occaecat pariatur
-          fugiat Lorem.
-        </p>
-        <p>
-          Eiusmod ut labore fugiat deserunt ad aliquip anim pariatur duis ad
-          est. Sit duis id ea commodo consequat incididunt ullamco elit in enim.
-          Do velit sint proident irure eiusmod minim adipisicing nisi ipsum
-          Lorem exercitation. Eiusmod ut labore fugiat deserunt ad aliquip anim
-          pariatur duis ad est. Sit duis id ea commodo consequat incididunt
-          ullamco elit in enim. Do velit sint proident irure eiusmod minim
-          adipisicing nisi ipsum Lorem exercitation. Eiusmod ut labore fugiat
-          deserunt ad aliquip anim pariatur duis ad est. Sit duis id ea commodo
-          consequat incididunt ullamco elit in enim. Do velit sint proident
-          irure eiusmod minim adipisicing nisi ipsum Lorem exercitation.
-        </p>
+        <input type="text" class="test" />
       </article>
       <aside class="main__sidebar">
         <color-palette>
@@ -94,20 +49,22 @@
               </span>
             </a></div
         ></color-palette>
-        <p>
-          Reprehenderit mollit commodo laborum proident aute magna qui anim
-          irure. Pariatur velit Lorem ex ad esse elit commodo nisi. Laborum
-          dolore ipsum exercitation ipsum.
-        </p>
-        <p>
-          Aliqua excepteur dolore eu qui. Dolor velit adipisicing occaecat
-          incididunt. Ad eu esse et eu sunt. Laboris eiusmod adipisicing in
-          deserunt laborum ipsum fugiat velit esse ad duis Lorem nisi.
-        </p>
-        <p>
-          Ad esse do veniam aliqua laboris qui eiusmod. Elit dolor ut nostrud
-          nulla.
-        </p>
+        <div>
+          <p>
+            Reprehenderit mollit commodo laborum proident aute magna qui anim
+            irure. Pariatur velit Lorem ex ad esse elit commodo nisi. Laborum
+            dolore ipsum exercitation ipsum.
+          </p>
+          <p>
+            Aliqua excepteur dolore eu qui. Dolor velit adipisicing occaecat
+            incididunt. Ad eu esse et eu sunt. Laboris eiusmod adipisicing in
+            deserunt laborum ipsum fugiat velit esse ad duis Lorem nisi.
+          </p>
+          <p>
+            Ad esse do veniam aliqua laboris qui eiusmod. Elit dolor ut nostrud
+            nulla.
+          </p>
+        </div>
         <p>
           Sit nisi occaecat non minim do officia proident enim elit nostrud.
           Reprehenderit ullamco consequat labore mollit cillum mollit occaecat
@@ -143,15 +100,21 @@
           exercitation eiusmod consectetur sunt ullamco.
         </p>
       </aside>
-      <img class="main__image" src="./assets/images/women-fashion.svg" alt="" />
     </main>
+
+    <img class="picture-in-main" src="./assets/images/piatkowo.jpg" alt="" />
+    <img
+      class="picture-in-footer"
+      src="./assets/images/women-fashion.svg"
+      alt=""
+    />
     <footer class="footer">
       <h4>Footer</h4>
     </footer>
     <script>
       function toggleColors() {
         const element1 = document.querySelector(".color-palette");
-        const element2 = document.querySelector(".main__image");
+        const element2 = document.querySelector(".picture-in-footer");
         const element3 = document.querySelector(".main__button");
         const element4 = document.querySelector(".footer");
 

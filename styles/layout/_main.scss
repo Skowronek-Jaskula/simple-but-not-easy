@@ -1,4 +1,5 @@
 @use "../utilities/variables";
+@use "../utilities/colors";
 @use "../utilities/helpers";
 @use "../utilities/mixins";
 
@@ -11,7 +12,7 @@
   grid-template-areas:
     "button   .         sidebar"
     "article  article   sidebar"
-    ".        image     sidebar";
+    ".        .         sidebar";
   grid-template-columns: 2fr 1fr 1fr;
   height: calc(100vh - variables.$header-height - variables.$footer-height);
   padding: 0.5rem 1.5rem;
@@ -42,12 +43,9 @@
       font-size: 0.75rem;
       text-align: justify;
     }
-  }
 
-  &__image {
-    @include mixins.toggle-colors();
-
-    grid-area: image;
-    max-height: 100%;
+    > p:nth-of-type(even) {
+      color: variables.$cap-red-5;
+    }
   }
 }
