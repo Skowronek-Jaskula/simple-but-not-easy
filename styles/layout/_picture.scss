@@ -1,0 +1,21 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+.picture {
+  &-in-main {
+    height: calc(100vh - variables.$header-height - variables.$footer-height);
+    object-fit: cover;
+    object-position: bottom;
+    width: var(--content-width);
+  }
+
+  &-in-footer {
+    @include mixins.toggle-colors();
+
+    bottom: calc(0.75 * variables.$footer-height);
+    left: 50%;
+    position: absolute;
+    width: 20vw;
+    z-index: 1;
+  }
+}
