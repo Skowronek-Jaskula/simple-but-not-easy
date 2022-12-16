@@ -1,17 +1,33 @@
-@use "./utilities/variables" as *;
-@use "./utilities/helpers" as *;
-@use "./utilities/mixins" as *;
+@use "../utilities/variables" as *;
+@use "../utilities/helpers" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/icons" as *;
 
 .test {
-  background-color: yellow;
+  background-image: svg-url-with-replaced-fill(
+    $zoom,
+    purple,
+    $fill-to-replace: "#000000"
+  );
+  background-position-x: calc(100% - 1rem);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  border: solid thin black;
+  height: 4rem;
 }
-// :is(.footer.colorful) h2 {
-//   color: red;
-// }
 
-// :where(.footer.colorful) h2 {
-//   color: yellowgreen;
-// }
+:is(.footer.colorful) .main__sidebar {
+  //   color: red;
+}
+
+:where(.footer.colorful) h4 {
+  //   color: yellowgreen;
+}
+
+:has(.footer.colorful) .main__sidebar {
+  //   background-color: yellowgreen;
+}
 
 .parent {
   .child {
@@ -23,8 +39,8 @@
 }
 
 .grand-parent {
-  .parent {
-    @at-root .child {
+  @at-root .parent {
+    .child {
     }
   }
 }
@@ -32,7 +48,17 @@
 h4 {
   color: #000;
 
+  :is(.colorful) & {
+    background-color: purple;
+    color: #000;
+  }
+
   .colorful & {
     color: #fff;
   }
+}
+
+:is(header) > h1 {
+  background-color: purple;
+  color: #000;
 }
